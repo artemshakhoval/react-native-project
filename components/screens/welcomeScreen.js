@@ -33,3 +33,41 @@ const WelcomeScreen = () => {
 };
 
 export default WelcomeScreen;
+
+const styles = StyleSheet.create({
+  backgroundImg: {
+    width: "100%",
+    height: "100%",
+  },
+  wrapper: {
+    width: "100%",
+    flex: 1,
+    //flexDirection: "row",
+    alignItems: "center",
+    marginTop:
+      Platform.OS === "android" ? `${StatusBar.currentHeight + 50}` : 70,
+  },
+  content: {
+    flex: 1,
+    alignItems: "center",
+  },
+  logo: {
+    width: 120,
+    height: 120,
+    marginBottom: 10,
+  },
+  footer: {
+    width: "100%",
+    alignItems: "flex-end",
+  },
+  red: {
+    width: "100%",
+    height: 70,
+    backgroundColor: "#fc5c65",
+  },
+  green: {
+    width: "100%",
+    height: 70,
+    backgroundColor: "#4ECDC4",
+  },
+});
