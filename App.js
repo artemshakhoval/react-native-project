@@ -16,9 +16,11 @@ import {
   useDeviceOrientation,
 } from "@react-native-community/hooks";
 import WelcomeScreen from "./components/screens/welcomeScreen";
+import ViewImageScreen from "./components/screens/viewImageScreen";
 
 export default function App() {
-  return <WelcomeScreen />;
+  //return <WelcomeScreen />;
+  return <ViewImageScreen />;
   //<SafeAreaView style={styles.container}>
   /*<View
         style={{
